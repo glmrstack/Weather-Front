@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Builders",
+    "slug": "Builders",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
