@@ -2,21 +2,22 @@ import React from 'react';
 import Card from './components/Card';
 import InformationCard from './components/InformationCard';
 import { useState, useEffect } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { FontAwesome5, Ionicons } from '@expo/vector-icons';
 
 export default function App() {
 
   /** Variables */
   const [darkTheme, setDarkTheme] = useState(true);
+
   const [currentClimate, setCurrentClimate] = useState('27');
   const [location, setLocation] = useState('Brasil, Rio de Janeiro');
   const [currentHour, setCurrentHour] = useState('11:28');
+
   const [wind, setWind] = useState('65');
   const [humidity, setHumidity] = useState('80');
   const [climateMin, setClimateMin] = useState('20');
   const [climateMax, setClimateMax] = useState('28');
-
 
   /** Styled Sheets */
   const styles = StyleSheet.create({
@@ -107,7 +108,6 @@ export default function App() {
     }
 
   });
-
 
   /** Display Views */
   return (
